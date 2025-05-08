@@ -11,8 +11,6 @@
 #' │   │   │   ├── month={month}/  # Month of the data
 #' │   │   │   │   ├── file-1.parquet  # Processed data file
 #'
-#' @author [Your Name]
-#' @date [Current Date]
 
 library(httr2)
 library(rvest)
@@ -146,6 +144,8 @@ for (run in runs) {
         out,
         here::here(file_path, "file-1.parquet")
       )
+
+      Sys.sleep(1)
     }
   }
 }
