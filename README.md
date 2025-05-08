@@ -2,6 +2,10 @@
 
 This project downloads and processes UK Climate Projections 2018 (UKCP18) data from the CEDA archive. The data is converted from NetCDF format to HIVE-partitioned parquet files for efficient storage and querying.
 
+## Downloading and Processing the Data
+
+The data is downloaded from the CEDA archive in the file [R/get_ukcp_hourly.R](R/get_ukcp_hourly.R) and monthly summary statistics are saved in a HIVE-partitioned parquet dataset.
+
 ## Data Structure
 
 The processed data is organized in a hierarchical structure:
