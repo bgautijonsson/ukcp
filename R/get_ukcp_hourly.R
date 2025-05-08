@@ -67,7 +67,7 @@ for (run in runs) {
     urls <- urls[seq(1, length(urls), by = 2)]
 
     # For testing purposes, limit to first two files
-    urls <- urls[1:2]
+    # urls <- urls[1:2]
 
     # Process each NetCDF file
     for (url in urls) {
